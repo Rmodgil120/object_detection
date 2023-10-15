@@ -15,7 +15,7 @@ np.random.seed(543210)
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # for static image processing
-# Replace cap = cv2.VideoCapture(0) with image = cv2.imread(image_path) in place of
+# Replace cap = cv2.VideoCapture(0) with image = cv2.imread(image_path)
 # remove while statement along with _, image = cap.read(), also remove the indentaition
 # and change waitkey to 0 for image processing, and remove cap.release()
 
