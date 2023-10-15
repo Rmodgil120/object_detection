@@ -15,8 +15,13 @@ np.random.seed(543210)
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 
+<<<<<<< HEAD
 # for static/Live image processing (currently the model is set for Static)
 # Replace cap = cv2.VideoCapture(0) with image = cv2.imread(image_path) in place of
+=======
+# for static image processing
+# Replace cap = cv2.VideoCapture(0) with image = cv2.imread(image_path)
+>>>>>>> cb84371fd1fa936e08f5bc2f6d32b2d282e05cd2
 # remove while statement along with _, image = cap.read(), also remove the indentaition
 # and change waitkey to 0 for image processing (and 5 for Live detection, and remove cap.release()
 # Do the opposit for live object recognition put the following in the indentaion too
