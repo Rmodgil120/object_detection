@@ -1,0 +1,7 @@
+For static/Live image processing (currently the model is set for Static)
+Replace cap = cv2.VideoCapture(0) with image = cv2.imread(image_path) in place of
+remove while statement along with _, image = cap.read(), also remove the indentaition
+and change waitkey to 0 for image processing (and 5 for Live detection, and remove cap.release()
+Do the opposit for live object recognition put the following in the indentaion too
+cv2.imshow("Detected Object", image)
+cv2.waitKey(0)
